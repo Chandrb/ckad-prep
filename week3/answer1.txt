@@ -1,0 +1,3 @@
+k run nginx-pod --image=nginx --port 80 --labels=app=nginx
+k expose pod nginx-pod --type=loadbalancer --port=8080 --target-port=80
+curl http://localhost:8080
