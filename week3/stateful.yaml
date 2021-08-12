@@ -36,7 +36,7 @@ spec:
           name: web
         volumeMounts:
         - name: ss-azure-disk
-          mountPath: /usr/share/nginx/html
+          mountPath: /usr/ss
   volumeClaimTemplates:
   - metadata:
       name: ss-azure-disk
